@@ -31,7 +31,7 @@
 <details>
   <summary>Click to expand</summary>
 
-🟠 Basic Operations:
+<br> 🟠 Basic Operations:
 
 ```html
 
@@ -43,7 +43,7 @@
 
 ```
 
-🟠 Advantages:
+<br> 🟠 Advantages:
 
 ```html
 
@@ -53,7 +53,7 @@
 
 ```
 
-🟠 Applications:
+<br> 🟠 Applications:
 
 ```html
 
