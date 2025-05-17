@@ -13,7 +13,7 @@
 |---|---|---|
 <br> 
 
-🔙 [![DSA_in_C_Tutorial](https://img.shields.io/badge/DSA_in_C_Tutorial-000080?style=for-the-badge&logo=C&logoColor=white)](https://github.com/DeviprasadShetty9833/DSA_in_C_Tutorial) 
+🔙 [![DSA_in_C_Tutorial](https://img.shields.io/badge/Back_to-DSA_in_C_Tutorial-000080?style=for-the-badge&logo=C&logoColor=white)](https://github.com/DeviprasadShetty9833/DSA_in_C_Tutorial) 
 
 # Singly Linked List:
 
