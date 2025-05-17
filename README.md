@@ -35,11 +35,11 @@
 
 ```html
 
-   - Insertion: Add a node at the beginning, end, or a specific position.
+- Insertion: Add a node at the beginning, end, or a specific position.
 
-   - Deletion: Remove a node from the beginning, end, or a specific position.
+- Deletion: Remove a node from the beginning, end, or a specific position.
 
-   - Traversal: Visit each node to access or display its value.
+- Traversal: Visit each node to access or display its value.
 
 ```
 
