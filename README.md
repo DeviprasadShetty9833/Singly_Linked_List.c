@@ -17,21 +17,17 @@
 
 # Singly Linked List:
 
-• A singly linked list is a linear data structure where each element (called a node) contains:
+▶️ A singly linked list is a linear data structure where each element (called a node) contains:
 
   - Data: The value stored in the node.
 
   - Next: A pointer/reference to the next node in the list.
 
-• The last node’s next pointer is set to NULL to indicate the end of the list.
+▶️ The last node’s next pointer is set to NULL to indicate the end of the list.
 
-2. Advantages:
+🟠 Basic Operations:
 
-• Dynamic size: Can grow or shrink as needed.
-
-• Efficient insertions and deletions: No shifting of elements like arrays.
-
-3. Basic Operations:
+```html
 
    - Insertion: Add a node at the beginning, end, or a specific position.
 
@@ -39,13 +35,29 @@
 
    - Traversal: Visit each node to access or display its value.
 
-4. Applications:
+```
+
+🟠 Advantages:
+
+```html
+
+• Dynamic size: Can grow or shrink as needed.
+
+• Efficient insertions and deletions: No shifting of elements like arrays.
+
+```
+
+🟠 Applications:
+
+```html
 
 • Dynamic memory allocation.
 
 • Implementation of stacks, queues, and other abstract data types.
 
 • Undo functionality in text editors.
+
+```
 
 # Explanation of Code:
 
