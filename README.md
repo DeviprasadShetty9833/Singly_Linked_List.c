@@ -17,6 +17,9 @@
 
 # Singly Linked List:
 
+<table>
+<tr><td>
+
 ▶️ A singly linked list is a linear data structure where each element (called a node) contains:
 
   - Data: The value stored in the node.
@@ -24,6 +27,9 @@
   - Next: A pointer/reference to the next node in the list.
 
 ▶️ The last node’s next pointer is set to NULL to indicate the end of the list.
+
+<details>
+  <summary>Click to expand</summary>
 
 🟠 Basic Operations:
 
@@ -58,6 +64,11 @@
 • Undo functionality in text editors.
 
 ```
+
+</tr></td>
+</table>
+
+</details> 
 
 # Explanation of Code:
 
