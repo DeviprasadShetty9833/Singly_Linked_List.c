@@ -82,7 +82,7 @@
 ```
 
 
-<br> ![2.](https://img.shields.io/badge/_1]_-Node_Structure-000080?style=for-the-badge&logo=C&logoColor=white)   
+<br> ![2.](https://img.shields.io/badge/_2]_-Node_Structure-000080?style=for-the-badge&logo=C&logoColor=white)   
 
 ```html
 typedef struct Node {
@@ -93,6 +93,21 @@ typedef struct Node {
 ```
 
 <br> ![image alt](https://github.com/DeviprasadShetty9833/Singly_Linked_List.c/blob/542f71872f4e42020d36a731dfb83d9620f2d1cb/assets/SLL1.png)  <!-- Website : Medium -->
+
+
+<br> ![3.](https://img.shields.io/badge/_3]_-Create_a_Node-000080?style=for-the-badge&logo=C&logoColor=white)   
+
+```html
+
+Node* createNode(int data) {
+    Node *newNode = (Node*)malloc(sizeof(Node)); // Allocate memory
+    newNode->data = data;                         // Set the value
+    newNode->next = NULL;                         // Initially points to nothing
+    return newNode;                               // Return the new node
+}
+
+```
+
 <br> ![image alt](https://github.com/DeviprasadShetty9833/Singly_Linked_List.c/blob/aca2fa765667965ca09da800977a87b951831b2b/assets/SLL2.png)  <!-- Website : Stackademic -->
 
 # Output:
