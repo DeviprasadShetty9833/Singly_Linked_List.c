@@ -75,14 +75,17 @@
 
 <br> ![1.](https://img.shields.io/badge/_1]_-Header_Files-000080?style=for-the-badge&logo=C&logoColor=white)   
 
+*Code*:
+
 ```html
 #include <stdio.h>   // For input/output functions like printf and scanf
 #include <stdlib.h>  // For malloc and free functions
 
 ```
 
-
 <br> ![2.](https://img.shields.io/badge/_2]_-Node_Structure-000080?style=for-the-badge&logo=C&logoColor=white)   
+
+*Code*:
 
 ```html
 typedef struct Node {
@@ -96,6 +99,8 @@ typedef struct Node {
 
 
 <br> ![3.](https://img.shields.io/badge/_3]_-Create_a_Node-000080?style=for-the-badge&logo=C&logoColor=white)   
+
+*Code*:
 
 ```html
 
