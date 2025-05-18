@@ -108,8 +108,10 @@ typedef struct Node {
 
 Node* createNode(int data) {
     Node *newNode = (Node*)malloc(sizeof(Node));  // Allocate memory
+
     newNode->data = data;                         // Set the value
     newNode->next = NULL;                         // Initially points to nothing
+
     return newNode;                               // Return the new node
 }
 
@@ -125,9 +127,36 @@ Node* createNode(int data) {
 
 void insertAtBeginning(Node **head, int data) {
     Node *newNode = createNode(data);                 // Create node
+
     newNode->next = *head;                            // Point new node to current head
     *head = newNode;                                  // Move head to new node
+
     printf("%d inserted at the beginning\n", data);
+}
+
+```
+
+<br> ![4.](https://img.shields.io/badge/_5]_-Insert_At_End-000080?style=for-the-badge&logo=C&logoColor=white)   
+
+*Code*:
+
+```html
+
+void insertAtEnd(Node **head, int data) {
+    Node *newNode = createNode(data);
+    
+    if (*head == NULL) {
+        *head = newNode;
+        printf("%d inserted at the end\n", data);
+        return;
+    }
+    
+    Node *temp = *head;
+    while (temp->next != NULL)
+        temp = temp->next;                     // Move to the last node
+    temp->next = newNode;                      // Link new node at the end
+
+    printf("%d inserted at the end\n", data);
 }
 
 ```
