@@ -29,7 +29,7 @@
 ⏺️ The last node’s next pointer is set to NULL to indicate the end of the list.
 
 <details>
-  <summary>Click to expand</summary>
+  <summary>Click to expand 🔻</summary>
 
 <br> 🟠 Basic Operations:
 
