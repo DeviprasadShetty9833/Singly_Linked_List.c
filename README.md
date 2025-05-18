@@ -117,6 +117,21 @@ Node* createNode(int data) {
 
 <br> ![image alt](https://github.com/DeviprasadShetty9833/Singly_Linked_List.c/blob/aca2fa765667965ca09da800977a87b951831b2b/assets/SLL2.png)  <!-- Website : Stackademic -->
 
+<br> ![4.](https://img.shields.io/badge/_4]_-Insert_At_Beginning-000080?style=for-the-badge&logo=C&logoColor=white)   
+
+*Code*:
+
+```html
+
+void insertAtBeginning(Node **head, int data) {
+    Node *newNode = createNode(data);                 // Create node
+    newNode->next = *head;                            // Point new node to current head
+    *head = newNode;                                  // Move head to new node
+    printf("%d inserted at the beginning\n", data);
+}
+
+```
+
 # Output:
 
 ---
