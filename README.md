@@ -82,6 +82,16 @@
 ```
 
 
+<br> ![2.](https://img.shields.io/badge/_1]_-Node_Structure-000080?style=for-the-badge&logo=C&logoColor=white)   
+
+```html
+typedef struct Node {
+    int data;              // Holds the value
+    struct Node *next;     // Pointer to the next node
+} Node;
+
+```
+
 <br> ![image alt](https://github.com/DeviprasadShetty9833/Singly_Linked_List.c/blob/542f71872f4e42020d36a731dfb83d9620f2d1cb/assets/SLL1.png)  <!-- Website : Medium -->
 <br> ![image alt](https://github.com/DeviprasadShetty9833/Singly_Linked_List.c/blob/aca2fa765667965ca09da800977a87b951831b2b/assets/SLL2.png)  <!-- Website : Stackademic -->
 
