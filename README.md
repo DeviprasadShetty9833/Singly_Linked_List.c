@@ -100,7 +100,7 @@ typedef struct Node {
 ```html
 
 Node* createNode(int data) {
-    Node *newNode = (Node*)malloc(sizeof(Node)); // Allocate memory
+    Node *newNode = (Node*)malloc(sizeof(Node));  // Allocate memory
     newNode->data = data;                         // Set the value
     newNode->next = NULL;                         // Initially points to nothing
     return newNode;                               // Return the new node
