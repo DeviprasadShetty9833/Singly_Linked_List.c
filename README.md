@@ -272,14 +272,33 @@ head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
                         temp  
 
 3.
-            newNode → [30 | next]
+            newNode → [30] 
+                                        ↓ 
+head→[10]→[20]→[40]→[50]→NULL
+                            ↑          
+                        temp  
+
+4.
+      newNode → [30] 
+                              ↑    ↓ 
+head→[10]→[20]  [40]→[50]→NULL
+                            ↑          
+                        temp  
+
+5.
+head→[10]→[20]→[30]→[40]→[50]→NULL
+                            ↑          ↑
+                        temp  newNode
+
+
+
 
 ```
 
 
 In Plain English:
 
-First, if the position is 1, I’ll just insert it at the beginning — easy peasy. Otherwise, I’ll walk through the list node by node until I reach the place just before where the new node should go. If I reach the end before finding that spot, I’ll shout ‘out of bounds!’. But if I’m in the right place, I’ll: create the new node, link it to the next node, and adjust the current node to point to this new one. Boom! The new node is now exactly where you asked for."
+> First, if the position is 1, I’ll just insert it at the beginning — easy peasy. Otherwise, I’ll walk through the list node by node until I reach the place just before where the new node should go. If I reach the end before finding that spot, I’ll shout ‘out of bounds!’. But if I’m in the right place, I’ll: create the new node, link it to the next node, and adjust the current node to point to this new one. Boom! The new node is now exactly where you asked for."
 
 
 # Output:
