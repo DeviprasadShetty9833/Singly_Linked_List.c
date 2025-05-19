@@ -159,6 +159,10 @@ void insertAtBeginning(Node **head, int data) {
 > - Link newNode to initial node pointed by head. 
 > - Link head pointer to point new node, thus newNode becomes initial node.
 
+In Plain English:
+
+> I made a new node for you. I saved your number in it. Then, I'll link it to the current first node (if there is one). Now I’ll point this head to this new node — boom, it's leading the list!"
+
 <br> ![4.](https://img.shields.io/badge/_5]_-Insert_At_End-000080?style=for-the-badge&logo=C&logoColor=white)   
 
 *Code*:
