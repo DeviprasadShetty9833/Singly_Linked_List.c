@@ -188,7 +188,7 @@ void insertAtBeginning(Node **head, int data) {
 
 ```html
 
-Position:        1             2   
+Position:        1           2   
 List: head→[20 | next]→[30 | next]→NULL
 Insert: [10 | next]→NULL at position 1 i.e before 20.
 
