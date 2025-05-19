@@ -156,10 +156,10 @@ Node* createNode(int data) {
 *Algorithm:*
 
 > CreateNode(data):
-<br>    1. Allocate memory for new node.
-<br>    2. Set newNode.data = data.
-<br>    3. Set newNode.next = NULL.
-<br>    4. Return newNode.
+<br> &nbsp&nbsp   1. Allocate memory for new node.
+<br> &nbsp&nbsp   2. Set newNode.data = data.
+<br> &nbsp&nbsp   3. Set newNode.next = NULL.
+<br> &nbsp&nbsp   4. Return newNode.
 
 *In Plain English:*
 
