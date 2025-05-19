@@ -265,6 +265,18 @@ void insertAtEnd(Node **head, int data) {
 
 ```
 
+*Algorithm:*
+> InsertAtEnd(head, data):
+<br>     1. newNode = CreateNode(data)
+<br>     2. IF head is NULL:
+<br>           head = newNode
+<br>        ELSE:
+<br>           temp = head
+<br>           WHILE temp.next != NULL:
+<br>              temp = temp.next
+<br>           temp.next = newNode
+<br>     3. Return head
+
 </td></tr>
 </table>
 
