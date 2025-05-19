@@ -77,7 +77,7 @@
 
 <br> ![1.](https://img.shields.io/badge/_1]_-Header_Files-000080?style=for-the-badge&logo=C&logoColor=white)   
 
-_**`Code:`**_
+*`Code:`*
 
 ```html
 #include <stdio.h>   // For input/output functions like printf and scanf
@@ -87,7 +87,7 @@ _**`Code:`**_
 
 <br> ![2.](https://img.shields.io/badge/_2]_-Node_Structure-000080?style=for-the-badge&logo=C&logoColor=white)   
 
-*Code:*
+*`Code:`*
 
 ```html
 typedef struct Node {
@@ -113,7 +113,7 @@ typedef struct Node {
 
 <br> ![3.](https://img.shields.io/badge/_3]_-Create_a_Node-000080?style=for-the-badge&logo=C&logoColor=white)   
 
-*Code*:
+*`Code:`*
 
 ```html
 
@@ -144,7 +144,7 @@ Node* createNode(int data) {
 
 <br> ![4.](https://img.shields.io/badge/_4]_-Insert_At_Beginning-000080?style=for-the-badge&logo=C&logoColor=white)   
 
-*Code*:
+*`Code:`*
 
 ```html
 
@@ -197,7 +197,7 @@ Step 3:
 
 <br> ![5.](https://img.shields.io/badge/_5]_-Insert_At_End-000080?style=for-the-badge&logo=C&logoColor=white)   
 
-*Code*:
+*`Code:`*
 
 ```html
 
@@ -222,7 +222,7 @@ void insertAtEnd(Node **head, int data) {
 
 <br> ![6.](https://img.shields.io/badge/_6]_-Insert_At_Position-000080?style=for-the-badge&logo=C&logoColor=white)   
 
-*Code*:
+*`Code:`*
 
 ```html
 
