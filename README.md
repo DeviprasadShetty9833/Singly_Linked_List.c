@@ -72,7 +72,7 @@
 
 # Source Code:
 
-[src.c](https://github.com/DeviprasadShetty9833/Singly_Linked_List.c/blob/a17ce82cc276b7feacf7bbe80e9e9f04746a487f/src.c)
+Here is the source code from the file : [src.c](https://github.com/DeviprasadShetty9833/Singly_Linked_List.c/blob/a17ce82cc276b7feacf7bbe80e9e9f04746a487f/src.c)
 
 # 🔎 AIM: To implement the basic operations of a singly linked list (insertion, deletion, and traversal).
 
