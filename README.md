@@ -159,6 +159,8 @@ void insertAtBeginning(Node **head, int data) {
 > - Link newNode to initial node pointed by head. 
 > - Link head pointer to point new node, thus newNode becomes initial node.
 
+```html
+
 <br> Example:
 <br> Position:        1             2   
 <br> List: head→[20 | next]→[30 | next]→NULL
@@ -177,6 +179,7 @@ void insertAtBeginning(Node **head, int data) {
 <br> Step 3:
 <br> head→[10 | next]→[20 | next]→[30 | next]→NULL
 
+```
 
 In Plain English:
 
