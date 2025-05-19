@@ -283,6 +283,7 @@ head→[10 | next]→[20 | next]  [40 | next]→[50 | next]→NULL
                    temp  
 
 Step 5:
+
 head→[10 | next]→[20 | next]→[30 | next]→[40 | next]→[50 | next]→NULL
                     ↑            ↑
                    temp       newNode
