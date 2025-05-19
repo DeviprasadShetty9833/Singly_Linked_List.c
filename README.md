@@ -150,10 +150,10 @@ Node* createNode(int data) {
 ```html
 
 CreateNode(data):
-  1. Allocate memory for new node.
-  2. Set newNode.data = data.
-  3. Set newNode.next = NULL.
-  4. Return newNode.
+   1. Allocate memory for new node.
+   2. Set newNode.data = data.
+   3. Set newNode.next = NULL.
+   4. Return newNode.
 
 ```
 
@@ -199,10 +199,10 @@ void insertAtBeginning(Node **head, int data) {
 ```html
 
 InsertAtBeginning(head, data):
-   1. newNode = CreateNode(data)
-   2. newNode.next = head
-   3. head = newNode
-   4. Return head
+    1. newNode = CreateNode(data)
+    2. newNode.next = head
+    3. head = newNode
+    4. Return head
 
 ```
 
@@ -277,7 +277,7 @@ void insertAtEnd(Node **head, int data) {
 
 ```html
 
-> InsertAtEnd(head, data):
+InsertAtEnd(head, data):
     1. newNode = CreateNode(data)
     2. IF head is NULL:
           head = newNode
