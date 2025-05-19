@@ -98,11 +98,8 @@ typedef struct Node {
 ```
 
 > - typedef allows you to create an alias for a data type. In this case, it enables you to use Node instead of writing struct Node every time.
-
 > - Node is the name of the structure.
-
 > - data is used to store the value contained in the Node.
-
 > - next is a pointer of type struct Node, which is used to point to the next Node in the linked list, thus creating the chain-like structure.
 
 
