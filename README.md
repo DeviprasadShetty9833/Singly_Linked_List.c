@@ -97,6 +97,14 @@ typedef struct Node {
 
 ```
 
+> - typedef allows you to create an alias of data type i.e you can just write Node instead of struct Node
+
+> - Node is the name of structure.
+
+> - Date holds the value of the Node.
+
+> - next is a pointer of type struct Node which will point to the next Node in the list.
+
 <br> ![image alt](https://github.com/DeviprasadShetty9833/Singly_Linked_List.c/blob/542f71872f4e42020d36a731dfb83d9620f2d1cb/assets/SLL1.png)  <!-- Website : Medium -->
 
 
