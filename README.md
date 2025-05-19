@@ -245,6 +245,11 @@ void insertAtPosition(Node **head, int data, int pos) {
 
 ```
 
+> - Traverse the list until you reach two nodes before the desired insertion position.
+> - At this point, the pointer temp is at the node just before the target position.
+> - Link newNode's next to next node of temp.
+> - temp's next points to newNode.
+
 
 # Output:
 
