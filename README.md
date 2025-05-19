@@ -147,11 +147,15 @@ Node* createNode(int data) {
 
 *Algorithm:*
 
-> CreateNode(data):
-<br>  1. Allocate memory for new node.
-<br>  2. Set newNode.data = data.
-<br>  3. Set newNode.next = NULL.
-<br>  4. Return newNode.
+```html
+
+CreateNode(data):
+  1. Allocate memory for new node.
+  2. Set newNode.data = data.
+  3. Set newNode.next = NULL.
+  4. Return newNode.
+
+```
 
 *Explanation:*
 
@@ -192,11 +196,15 @@ void insertAtBeginning(Node **head, int data) {
 
 *Algorithm:*
 
-> InsertAtBeginning(head, data):
-<br>    1. newNode = CreateNode(data)
-<br>    2. newNode.next = head
-<br>    3. head = newNode
-<br>    4. Return head
+```html
+
+InsertAtBeginning(head, data):
+   1. newNode = CreateNode(data)
+   2. newNode.next = head
+   3. head = newNode
+   4. Return head
+
+```
 
 *Explanation:*
 
@@ -266,16 +274,21 @@ void insertAtEnd(Node **head, int data) {
 ```
 
 *Algorithm:*
+
+```html
+
 > InsertAtEnd(head, data):
-<br>     1. newNode = CreateNode(data)
-<br>     2. IF head is NULL:
-<br>           head = newNode
-<br>        ELSE:
-<br>           temp = head
-<br>           WHILE temp.next != NULL:
-<br>              temp = temp.next
-<br>           temp.next = newNode
-<br>     3. Return head
+    1. newNode = CreateNode(data)
+    2. IF head is NULL:
+          head = newNode
+       ELSE:
+          temp = head
+          WHILE temp.next != NULL:
+             temp = temp.next
+          temp.next = newNode
+    3. Return head
+
+```
 
 </td></tr>
 </table>
