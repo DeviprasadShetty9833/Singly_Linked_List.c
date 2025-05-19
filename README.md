@@ -104,7 +104,7 @@ typedef struct Node {
 
 In Plain English:
 
-This is a structure (called Node) that contains:  an integer data, and a pointer next that links to the next node in the list. Also, because of typedef, you can just say Node instead of struct Node.”
+> This is a structure (called Node) that contains:  an integer data, and a pointer next that links to the next node in the list. Also, because of typedef, you can just say Node instead of struct Node.”
 
 <br> ![image alt](https://github.com/DeviprasadShetty9833/Singly_Linked_List.c/blob/542f71872f4e42020d36a731dfb83d9620f2d1cb/assets/SLL1.png)  <!-- Website : Medium -->
 
@@ -154,6 +154,10 @@ void insertAtBeginning(Node **head, int data) {
 }
 
 ```
+
+> - Node **head is a pointer to the head pointer of list. It allows modifying the actual head.
+> - Link newNode to initial node pointed by head. 
+> - Link head pointer to point new node, thus newNode becomes initial node.
 
 <br> ![4.](https://img.shields.io/badge/_5]_-Insert_At_End-000080?style=for-the-badge&logo=C&logoColor=white)   
 
