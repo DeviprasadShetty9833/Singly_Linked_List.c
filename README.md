@@ -74,6 +74,8 @@
 
 # 🔎 Explanation of Code: 
 
+<table>
+<tr><td>
 
 <br> ![1.](https://img.shields.io/badge/_1]_-Header_Files-000080?style=for-the-badge&logo=C&logoColor=white)   
 
@@ -84,6 +86,12 @@
 #include <stdlib.h>  // For malloc and free functions
 
 ```
+
+</td></tr>
+</table>
+
+<table>
+<tr><td>
 
 <br> ![2.](https://img.shields.io/badge/_2]_-Node_Structure-000080?style=for-the-badge&logo=C&logoColor=white)   
 
@@ -110,6 +118,11 @@ typedef struct Node {
 
 <br> ![image alt](https://github.com/DeviprasadShetty9833/Singly_Linked_List.c/blob/542f71872f4e42020d36a731dfb83d9620f2d1cb/assets/SLL1.png)  <!-- Website : Medium -->
 
+</td></tr>
+</table>
+
+<table>
+<tr><td>
 
 <br> ![3.](https://img.shields.io/badge/_3]_-Create_a_Node-000080?style=for-the-badge&logo=C&logoColor=white)   
 
@@ -141,6 +154,12 @@ Node* createNode(int data) {
 > "I made a new node for you. I saved your number in it. I made sure it doesn't point to any other node yet. Here’s your brand-new node, ready to put it into your list."
 
 <br> ![image alt](https://github.com/DeviprasadShetty9833/Singly_Linked_List.c/blob/aca2fa765667965ca09da800977a87b951831b2b/assets/SLL2.png)  <!-- Website : Stackademic -->
+
+</td></tr>
+</table>
+
+<table>
+<tr><td>
 
 <br> ![4.](https://img.shields.io/badge/_4]_-Insert_At_Beginning-000080?style=for-the-badge&logo=C&logoColor=white)   
 
@@ -195,6 +214,12 @@ Step 3:
 
 > "I made a new node for you. I saved your number in it. Then, I'll link it to the current first node (if there is one). Now I’ll point this head to this new node — boom, it's leading the list!"
 
+</td></tr>
+</table>
+
+<table>
+<tr><td>
+
 <br> ![5.](https://img.shields.io/badge/_5]_-Insert_At_End-000080?style=for-the-badge&logo=C&logoColor=white)   
 
 *Code:*
@@ -219,6 +244,12 @@ void insertAtEnd(Node **head, int data) {
 }
 
 ```
+
+</td></tr>
+</table>
+
+<table>
+<tr><td>
 
 <br> ![6.](https://img.shields.io/badge/_6]_-Insert_At_Position-000080?style=for-the-badge&logo=C&logoColor=white)   
 
@@ -254,6 +285,12 @@ void insertAtPosition(Node **head, int data, int pos) {
 }
 
 ```
+
+</td></tr>
+</table>
+
+<table>
+<tr><td>
 
 *Explanation:*
 
@@ -312,6 +349,14 @@ head→[10 | next]→[20 | next]→[30 | next]→[40 | next]→[50 | next]→NUL
 
 > "First, I'll check if the position makes sense. If it's the first spot I’ll just insert it at the beginning — easy peasy. Otherwise, I’ll walk through the list node by node until I reach the place just before where the new node should go. If I reach the end before finding that spot, I’ll shout ‘out of bounds!’. But if I’m in the right place, I’ll: create the new node, link it to the next node, and adjust the current node to point to this new one. Boom! The new node is now exactly where you asked for."
 
+</td></tr>
+</table>
+
+<table>
+<tr><td>
+
+ ![status](https://img.shields.io/badge/status-upcoming-yellow)
+
 <br> ![7.](https://img.shields.io/badge/_7]_-Delete_from_Beginning-000080?style=for-the-badge&logo=C&logoColor=white)
 
 <br> ![8.](https://img.shields.io/badge/_8]_-Delete_from_End-000080?style=for-the-badge&logo=C&logoColor=white)   
@@ -321,6 +366,8 @@ head→[10 | next]→[20 | next]→[30 | next]→[40 | next]→[50 | next]→NUL
 <br> ![10.](https://img.shields.io/badge/_10]_-Display_Function-000080?style=for-the-badge&logo=C&logoColor=white)   
 
 <br> ![11.](https://img.shields.io/badge/_11]_-Main_Function-000080?style=for-the-badge&logo=C&logoColor=white)   
+
+
 
 # Output:
 
