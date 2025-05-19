@@ -292,6 +292,12 @@ InsertAtEnd(head, data):
 
 ```
 
+*Explanation:*
+
+> - temp points to initial node, pointed by head. 
+> - Traverse till second last node. 
+> - Next node of temp i.e. Last node points to newNode.
+
 *Example:*
 
 ```html
@@ -326,12 +332,6 @@ head→[10 | next]→[20 | next]→[30 | next]→NULL
                    temp       newNode
 
 ```
-
-*Explanation:*
-
-> - temp points to initial node, pointed by head. 
-> - Traverse till second last node. 
-> - Next node of temp i.e. Last node points to newNode.
 
 *In Plain English:*
 
