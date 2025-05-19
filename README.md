@@ -269,11 +269,11 @@ head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
                    temp  
 
 3.
-            newNode → [30 | next] 
-                                        ↓ 
+              newNode → [30 | next]
+                                ↓ 
 head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
-                            ↑          
-                        temp  
+                    ↑
+                   temp  
 
 4.
       newNode → [30 | next] 
