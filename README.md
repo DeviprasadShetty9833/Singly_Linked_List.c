@@ -292,6 +292,41 @@ InsertAtEnd(head, data):
 
 ```
 
+*Example:*
+
+```html
+
+Position:          1           2    
+List:   head→[10 | next]→[20 | next]→NULL
+Insert:  [30 | next]→NULL at position 3 i.e after 30.
+                                
+Step 1:
+
+head→[10 | next]→[20 | next]→NULL
+       ↑          
+      temp 
+ 
+Step 2: After while loop
+
+head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
+                    ↑
+                   temp  
+
+Step 3:
+              newNode → [30 | next]
+                          ↑
+head→[10 | next]→[20 | next]→NULL
+                    ↑
+                   temp  
+
+Step 4:
+
+head→[10 | next]→[20 | next]→[30 | next]→NULL
+                    ↑            ↑
+                   temp       newNode
+
+```
+
 *Explanation:*
 
 > - temp points to initial node, pointed by head. 
