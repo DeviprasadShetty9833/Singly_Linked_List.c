@@ -145,14 +145,6 @@ Node* createNode(int data) {
 
 ```
 
-*Explanation:*
-
-> - createNode is function that returns a pointer to a Node.
-> - newNode is a pointer to a Node.
-> -  malloc calculates the size in bytes needed to store a Node Structure and allocates memory from the heap(dynamic memory) and returns void pointer.
-> - (Node*) before malloc converts (typecasting) the generic void pointer into a Node pointer.
-> - int data is stored in newNode's data and newNode's next pointer points to NULL i.e does not point to anything.
-
 *Algorithm:*
 
 > CreateNode(data):
@@ -160,6 +152,14 @@ Node* createNode(int data) {
 <br>  2. Set newNode.data = data.
 <br>  3. Set newNode.next = NULL.
 <br>  4. Return newNode.
+
+*Explanation:*
+
+> - createNode is function that returns a pointer to a Node.
+> - newNode is a pointer to a Node.
+> -  malloc calculates the size in bytes needed to store a Node Structure and allocates memory from the heap(dynamic memory) and returns void pointer.
+> - (Node*) before malloc converts (typecasting) the generic void pointer into a Node pointer.
+> - int data is stored in newNode's data and newNode's next pointer points to NULL i.e does not point to anything.
 
 *In Plain English:*
 
@@ -189,6 +189,14 @@ void insertAtBeginning(Node **head, int data) {
 }
 
 ```
+
+*Algorithm:*
+
+> InsertAtBeginning(head, data):
+<br>    1. newNode = CreateNode(data)
+<br>    2. newNode.next = head
+<br>    3. head = newNode
+<br>    4. Return head
 
 *Explanation:*
 
