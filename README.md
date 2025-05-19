@@ -250,6 +250,9 @@ void insertAtPosition(Node **head, int data, int pos) {
 > - Link newNode's next to next node of temp.
 > - temp's next points to newNode.
 
+In Plain English:
+> First, if the position is 1, I’ll just insert it at the beginning — easy peasy. Otherwise, I’ll walk through the list node by node until I reach the place just before where the new node should go. If I reach the end before finding that spot, I’ll shout ‘out of bounds!’. But if I’m in the right place, I’ll: create the new node, link it to the next node, and adjust the current node to point to this new one. Boom! The new node is now exactly where you asked for."
+
 
 # Output:
 
