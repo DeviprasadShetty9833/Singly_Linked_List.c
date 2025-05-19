@@ -339,7 +339,7 @@ InsertAtPosition(head, data, pos):
     1. IF pos == 1:
          Call InsertAtBeginning(head, data)
     2. temp = head
-    3. FOR i from 1 to pos-2:
+    3. FOR i from 1 to pos-1:
          IF temp == NULL:
             Print "Position out of bounds"
             RETURN head
