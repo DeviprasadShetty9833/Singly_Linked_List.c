@@ -126,6 +126,16 @@ Node* createNode(int data) {
 
 ```
 
+> - createNode is function that returns a pointer to a Node.
+> - newNode is a pointer to a Node.
+> -  malloc calculates the size in bytes needed to store a Node Structure and allocates memory from the heap(dynamic memory) and returns void pointer.
+> - (Node*) before malloc converts (typecasting) the generic void pointer into a Node pointer.
+> - int data is stored in newNode's data and newNode's next pointer points to NULL i.e does not point to anything.
+
+In Plain English:
+
+> "I made a new node for you. I saved your number in it. I made sure it doesn't point to any other node yet. Now I’m giving it to you so you can put it into your list."
+
 <br> ![image alt](https://github.com/DeviprasadShetty9833/Singly_Linked_List.c/blob/aca2fa765667965ca09da800977a87b951831b2b/assets/SLL2.png)  <!-- Website : Stackademic -->
 
 <br> ![4.](https://img.shields.io/badge/_4]_-Insert_At_Beginning-000080?style=for-the-badge&logo=C&logoColor=white)   
