@@ -265,28 +265,25 @@ head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
 2. After for loop
 
 head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
-                    ↑          
-          ↓ 
-head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
                             ↑          
                         temp  
 
 3.
-            newNode → [30] 
+            newNode → [30 | next] 
                                         ↓ 
-head→[10]→[20]→[40]→[50]→NULL
+head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
                             ↑          
                         temp  
 
 4.
-      newNode → [30] 
+      newNode → [30 | next] 
                               ↑    ↓ 
-head→[10]→[20]  [40]→[50]→NULL
+head→[10 | next]→[20 | next]  [40 | next]→[50 | next]→NULL
                             ↑          
                         temp  
 
 5.
-head→[10]→[20]→[30]→[40]→[50]→NULL
+head→[10 | next]→[20 | next]→[30 | next]→[40 | next]→[50 | next]→NULL
                             ↑          ↑
                         temp  newNode
 
