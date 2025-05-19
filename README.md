@@ -276,16 +276,16 @@ head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
                    temp  
 
 4.
-      newNode → [30 | next] 
-                              ↑    ↓ 
+              newNode → [30 | next]
+                          ↑      ↓ 
 head→[10 | next]→[20 | next]  [40 | next]→[50 | next]→NULL
-                            ↑          
-                        temp  
+                    ↑
+                   temp  
 
 5.
 head→[10 | next]→[20 | next]→[30 | next]→[40 | next]→[50 | next]→NULL
-                            ↑          ↑
-                        temp  newNode
+                    ↑            ↑
+                   temp       newNode
 
 
 
