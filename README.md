@@ -87,7 +87,7 @@
 
 <br> ![2.](https://img.shields.io/badge/_2]_-Node_Structure-000080?style=for-the-badge&logo=C&logoColor=white)   
 
-*Code*:
+*Code:*
 
 ```html
 typedef struct Node {
