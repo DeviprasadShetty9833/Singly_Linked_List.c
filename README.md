@@ -163,7 +163,7 @@ In Plain English:
 
 > I made a new node for you. I saved your number in it. Then, I'll link it to the current first node (if there is one). Now I’ll point this head to this new node — boom, it's leading the list!"
 
-<br> ![4.](https://img.shields.io/badge/_5]_-Insert_At_End-000080?style=for-the-badge&logo=C&logoColor=white)   
+<br> ![5.](https://img.shields.io/badge/_5]_-Insert_At_End-000080?style=for-the-badge&logo=C&logoColor=white)   
 
 *Code*:
 
@@ -187,6 +187,42 @@ void insertAtEnd(Node **head, int data) {
 }
 
 ```
+
+<br> ![6.](https://img.shields.io/badge/_6]_-Insert_At_Position-000080?style=for-the-badge&logo=C&logoColor=white)   
+
+*Code*:
+
+```html
+
+void insertAtPosition(Node **head, int data, int pos) {
+    if (pos < 1) { 
+        printf("Invalid position!\n");
+        return;
+    }
+
+    if (pos == 1) {
+        insertAtBeginning(head, data);
+        return;
+    }
+
+    Node *newNode = createNode(data);  // Create newNode
+
+    Node *temp = *head;
+    for (int i = 1; i < pos - 1 && temp != NULL; i++)
+        temp = temp->next;
+    if (temp == NULL) {
+        printf("Position out of bounds!\n");
+        return;
+    }
+
+    newNode->next = temp->next;
+    temp->next = newNode;
+
+    printf("%d inserted at position %d\n", data, pos);
+}
+
+```
+
 
 # Output:
 
