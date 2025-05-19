@@ -265,8 +265,8 @@ head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
 2. After for loop
 
 head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
-                            ↑          
-                        temp  
+                    ↑
+                   temp  
 
 3.
             newNode → [30 | next] 
