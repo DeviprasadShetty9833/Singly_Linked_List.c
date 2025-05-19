@@ -331,6 +331,26 @@ void insertAtPosition(Node **head, int data, int pos) {
 
 ```
 
+*Algorithm:*
+
+```html
+
+InsertAtPosition(head, data, pos):
+    1. IF pos == 1:
+         Call InsertAtBeginning(head, data)
+    2. temp = head
+    3. FOR i from 1 to pos-2:
+         IF temp == NULL:
+            Print "Position out of bounds"
+            RETURN head
+         temp = temp.next
+    4. newNode = CreateNode(data)
+    5. newNode.next = temp.next
+    6. temp.next = newNode
+    7. Return head
+
+```
+
 *Explanation:*
 
 > - Traverse the list until you reach two nodes before the desired insertion position.
