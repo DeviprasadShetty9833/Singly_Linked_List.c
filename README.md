@@ -77,7 +77,7 @@
 
 <br> ![1.](https://img.shields.io/badge/_1]_-Header_Files-000080?style=for-the-badge&logo=C&logoColor=white)   
 
-*`Code:`*
+*Code:*
 
 ```html
 #include <stdio.h>   // For input/output functions like printf and scanf
@@ -87,7 +87,7 @@
 
 <br> ![2.](https://img.shields.io/badge/_2]_-Node_Structure-000080?style=for-the-badge&logo=C&logoColor=white)   
 
-*`Code:`*
+*Code:*
 
 ```html
 typedef struct Node {
@@ -97,14 +97,14 @@ typedef struct Node {
 
 ```
 
-*`Explanation:`*
+*Explanation:*
 
 > - typedef allows you to create an alias for a data type. In this case, it enables you to use Node instead of writing struct Node every time.
 > - Node is the name of the structure.
 > - data is used to store the value contained in the Node.
 > - next is a pointer of type struct Node, which is used to point to the next Node in the linked list, thus creating the chain-like structure.
 
-*In Plain English*:
+*In Plain English:*
 
 > This is a structure (called Node) that contains:  an integer data, and a pointer next that links to the next node in the list. Also, because of typedef, you can just say Node instead of struct Node.”
 
@@ -113,7 +113,7 @@ typedef struct Node {
 
 <br> ![3.](https://img.shields.io/badge/_3]_-Create_a_Node-000080?style=for-the-badge&logo=C&logoColor=white)   
 
-*`Code:`*
+*Code:*
 
 ```html
 
@@ -128,7 +128,7 @@ Node* createNode(int data) {
 
 ```
 
-*`Explanation:`*
+*Explanation:*
 
 > - createNode is function that returns a pointer to a Node.
 > - newNode is a pointer to a Node.
@@ -136,7 +136,7 @@ Node* createNode(int data) {
 > - (Node*) before malloc converts (typecasting) the generic void pointer into a Node pointer.
 > - int data is stored in newNode's data and newNode's next pointer points to NULL i.e does not point to anything.
 
-*In Plain English*:
+*In Plain English:*
 
 > "I made a new node for you. I saved your number in it. I made sure it doesn't point to any other node yet. Now I’m giving it to you so you can put it into your list."
 
@@ -144,7 +144,7 @@ Node* createNode(int data) {
 
 <br> ![4.](https://img.shields.io/badge/_4]_-Insert_At_Beginning-000080?style=for-the-badge&logo=C&logoColor=white)   
 
-*`Code:`*
+*Code:*
 
 ```html
 
@@ -159,13 +159,13 @@ void insertAtBeginning(Node **head, int data) {
 
 ```
 
-*`Explanation:`*
+*Explanation:*
 
 > - Node **head is a pointer to the head pointer of list. It allows modifying the actual head.
 > - Link newNode to initial node pointed by head. 
 > - Link head pointer to point new node, thus newNode becomes initial node.
 
-*Example*:
+*Example:*
 
 ```html
 
@@ -191,13 +191,13 @@ Step 3:
 
 ```
 
-*In Plain English*:
+*In Plain English:*
 
 > I made a new node for you. I saved your number in it. Then, I'll link it to the current first node (if there is one). Now I’ll point this head to this new node — boom, it's leading the list!"
 
 <br> ![5.](https://img.shields.io/badge/_5]_-Insert_At_End-000080?style=for-the-badge&logo=C&logoColor=white)   
 
-*`Code:`*
+*Code:*
 
 ```html
 
@@ -222,7 +222,7 @@ void insertAtEnd(Node **head, int data) {
 
 <br> ![6.](https://img.shields.io/badge/_6]_-Insert_At_Position-000080?style=for-the-badge&logo=C&logoColor=white)   
 
-*`Code:`*
+*Code:*
 
 ```html
 
@@ -255,14 +255,14 @@ void insertAtPosition(Node **head, int data, int pos) {
 
 ```
 
-*`Explanation:`*
+*Explanation:*
 
 > - Traverse the list until you reach two nodes before the desired insertion position.
 > - At this point, the pointer temp is at the node just before the target position.
 > - Link newNode's next to next node of temp.
 > - temp's next points to newNode.
 
-*Example*:
+*Example:*
 
 ```html
 
@@ -308,7 +308,7 @@ head→[10 | next]→[20 | next]→[30 | next]→[40 | next]→[50 | next]→NUL
 ```
 
 
-*In Plain English*:
+*In Plain English:*
 
 > First, if the position is 1, I’ll just insert it at the beginning — easy peasy. Otherwise, I’ll walk through the list node by node until I reach the place just before where the new node should go. If I reach the end before finding that spot, I’ll shout ‘out of bounds!’. But if I’m in the right place, I’ll: create the new node, link it to the next node, and adjust the current node to point to this new one. Boom! The new node is now exactly where you asked for."
 
