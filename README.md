@@ -72,7 +72,7 @@
 
 # Source Code:
 
-# 🔎 Explanation of Code: 
+# 🔎 AIM: To implement the basic operations of a singly linked list (insertion, deletion, and traversal).
 
 <table>
 <tr><td>
