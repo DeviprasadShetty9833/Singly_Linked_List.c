@@ -286,12 +286,6 @@ void insertAtPosition(Node **head, int data, int pos) {
 
 ```
 
-</td></tr>
-</table>
-
-<table>
-<tr><td>
-
 *Explanation:*
 
 > - Traverse the list until you reach two nodes before the desired insertion position.
@@ -367,7 +361,8 @@ head→[10 | next]→[20 | next]→[30 | next]→[40 | next]→[50 | next]→NUL
 
 <br> ![11.](https://img.shields.io/badge/_11]_-Main_Function-000080?style=for-the-badge&logo=C&logoColor=white)   
 
-
+</td></tr>
+</table>
 
 # Output:
 
