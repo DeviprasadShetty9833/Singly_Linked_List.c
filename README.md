@@ -97,7 +97,7 @@ typedef struct Node {
 
 ```
 
-*Explanation*:
+*`Explanation:`*
 
 > - typedef allows you to create an alias for a data type. In this case, it enables you to use Node instead of writing struct Node every time.
 > - Node is the name of the structure.
@@ -128,7 +128,7 @@ Node* createNode(int data) {
 
 ```
 
-*Explanation*:
+*`Explanation:`*
 
 > - createNode is function that returns a pointer to a Node.
 > - newNode is a pointer to a Node.
@@ -159,7 +159,7 @@ void insertAtBeginning(Node **head, int data) {
 
 ```
 
-*Explanation*:
+*`Explanation:`*
 
 > - Node **head is a pointer to the head pointer of list. It allows modifying the actual head.
 > - Link newNode to initial node pointed by head. 
@@ -255,7 +255,7 @@ void insertAtPosition(Node **head, int data, int pos) {
 
 ```
 
-*Explanation*:
+*`Explanation:`*
 
 > - Traverse the list until you reach two nodes before the desired insertion position.
 > - At this point, the pointer temp is at the node just before the target position.
