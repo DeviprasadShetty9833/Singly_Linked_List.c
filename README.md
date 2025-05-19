@@ -102,7 +102,7 @@ typedef struct Node {
 > - data is used to store the value contained in the Node.
 > - next is a pointer of type struct Node, which is used to point to the next Node in the linked list, thus creating the chain-like structure.
 
-In Plain English:
+*In Plain English*:
 
 > This is a structure (called Node) that contains:  an integer data, and a pointer next that links to the next node in the list. Also, because of typedef, you can just say Node instead of struct Node.”
 
@@ -132,7 +132,7 @@ Node* createNode(int data) {
 > - (Node*) before malloc converts (typecasting) the generic void pointer into a Node pointer.
 > - int data is stored in newNode's data and newNode's next pointer points to NULL i.e does not point to anything.
 
-In Plain English:
+*In Plain English*:
 
 > "I made a new node for you. I saved your number in it. I made sure it doesn't point to any other node yet. Now I’m giving it to you so you can put it into your list."
 
@@ -159,9 +159,9 @@ void insertAtBeginning(Node **head, int data) {
 > - Link newNode to initial node pointed by head. 
 > - Link head pointer to point new node, thus newNode becomes initial node.
 
-```html
+*Example*:
 
-Example:
+```html
 
 Position:        1             2   
 List: head→[20 | next]→[30 | next]→NULL
@@ -185,7 +185,7 @@ Step 3:
 
 ```
 
-In Plain English:
+*In Plain English*:
 
 > I made a new node for you. I saved your number in it. Then, I'll link it to the current first node (if there is one). Now I’ll point this head to this new node — boom, it's leading the list!"
 
@@ -254,6 +254,8 @@ void insertAtPosition(Node **head, int data, int pos) {
 > - Link newNode's next to next node of temp.
 > - temp's next points to newNode.
 
+*Example*:
+
 ```html
 
 Position:          1           2            3            4
@@ -298,7 +300,7 @@ head→[10 | next]→[20 | next]→[30 | next]→[40 | next]→[50 | next]→NUL
 ```
 
 
-In Plain English:
+*In Plain English*:
 
 > First, if the position is 1, I’ll just insert it at the beginning — easy peasy. Otherwise, I’ll walk through the list node by node until I reach the place just before where the new node should go. If I reach the end before finding that spot, I’ll shout ‘out of bounds!’. But if I’m in the right place, I’ll: create the new node, link it to the next node, and adjust the current node to point to this new one. Boom! The new node is now exactly where you asked for."
 
