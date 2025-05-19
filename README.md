@@ -102,7 +102,9 @@ typedef struct Node {
 > - data is used to store the value contained in the Node.
 > - next is a pointer of type struct Node, which is used to point to the next Node in the linked list, thus creating the chain-like structure.
 
+In Plain English:
 
+This is a structure (called Node) that contains:  an integer data, and a pointer next that links to the next node in the list. Also, because of typedef, you can just say Node instead of struct Node.”
 
 <br> ![image alt](https://github.com/DeviprasadShetty9833/Singly_Linked_List.c/blob/542f71872f4e42020d36a731dfb83d9620f2d1cb/assets/SLL1.png)  <!-- Website : Medium -->
 
