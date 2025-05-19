@@ -153,6 +153,14 @@ Node* createNode(int data) {
 > - (Node*) before malloc converts (typecasting) the generic void pointer into a Node pointer.
 > - int data is stored in newNode's data and newNode's next pointer points to NULL i.e does not point to anything.
 
+*Algorithm:*
+
+> CreateNode(data):
+    1. Allocate memory for new node.
+    2. Set newNode.data = data.
+    3. Set newNode.next = NULL.
+    4. Return newNode.
+
 *In Plain English:*
 
 > "I made a new node for you. I saved your number in it. I made sure it doesn't point to any other node yet. Here’s your brand-new node, ready to put it into your list."
