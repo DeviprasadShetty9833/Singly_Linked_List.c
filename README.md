@@ -87,6 +87,10 @@
 
 ```
 
+*In Plain English:*
+
+> "Headers are like my brain. Without the captain, I wouldn’t know how to do basic things like print, read input, or manage memory."
+
 </td></tr>
 </table>
 
