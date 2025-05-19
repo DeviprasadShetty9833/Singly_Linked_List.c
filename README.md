@@ -161,23 +161,23 @@ void insertAtBeginning(Node **head, int data) {
 
 ```html
 
-<br> Example:
-<br> Position:        1             2   
-<br> List: head→[20 | next]→[30 | next]→NULL
-<br> Insert: [10 | next]→NULL at position 1 i.e before 20.
-<br> 
-<br> Step 1: 
-<br> [10 | next] ← newNode
-<br>         ↓ 
-<br>  head→[20 | next]→[30 | next]→NULL
-<br> 
-<br> Step 2: 
-<br> [10 | next] ← newNode
-<br>   ↑     ↓ 
-<br>  head→[20 | next]→[30 | next]→NULL
-<br> 
-<br> Step 3:
-<br> head→[10 | next]→[20 | next]→[30 | next]→NULL
+Example:
+Position:        1             2   
+List: head→[20 | next]→[30 | next]→NULL
+Insert: [10 | next]→NULL at position 1 i.e before 20.
+
+Step 1: 
+  [10 | next] ← newNode
+         ↓ 
+  head→[20 | next]→[30 | next]→NULL
+
+Step 2: 
+  [10 | next] ← newNode
+    ↑    ↓ 
+  head→[20 | next]→[30 | next]→NULL
+ 
+Step 3:
+  head→[10 | next]→[20 | next]→[30 | next]→NULL
 
 ```
 
