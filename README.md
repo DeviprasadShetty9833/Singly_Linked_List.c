@@ -159,6 +159,25 @@ void insertAtBeginning(Node **head, int data) {
 > - Link newNode to initial node pointed by head. 
 > - Link head pointer to point new node, thus newNode becomes initial node.
 
+Example:
+Position:        1             2   
+List: head→[20 | next]→[30 | next]→NULL
+Insert: [10 | next]→NULL at position 1 i.e before 20.
+
+Step 1: 
+[10 | next] ← newNode
+        ↓ 
+ head→[20 | next]→[30 | next]→NULL
+
+ Step 2: 
+ [10 | next] ← newNode
+   ↑     ↓ 
+ head→[20 | next]→[30 | next]→NULL
+
+Step 3:
+head→[10 | next]→[20 | next]→[30 | next]→NULL
+
+
 In Plain English:
 
 > I made a new node for you. I saved your number in it. Then, I'll link it to the current first node (if there is one). Now I’ll point this head to this new node — boom, it's leading the list!"
