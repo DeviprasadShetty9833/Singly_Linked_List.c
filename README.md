@@ -77,7 +77,7 @@
 
 <br> ![1.](https://img.shields.io/badge/_1]_-Header_Files-000080?style=for-the-badge&logo=C&logoColor=white)   
 
-**`Code:`**
+**_`Code:`_**
 
 ```html
 #include <stdio.h>   // For input/output functions like printf and scanf
