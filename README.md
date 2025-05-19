@@ -242,7 +242,7 @@ Step 3:
 
 *In Plain English:*
 
-> "I made a new node for you. I saved your number in it. Then, I'll link it to the current first node (if there is one). Now I’ll point this head to this new node — boom, it's leading the list!"
+> "I'll make a new node and save your number in it. Then, I'll link it to the current first node (if there is one). Now I’ll point the head to this new node — boom, it's leading the list!"
 
 </td></tr>
 </table>
@@ -332,6 +332,11 @@ head→[10 | next]→[20 | next]→[30 | next]→NULL
 > - temp points to initial node, pointed by head. 
 > - Traverse till second last node. 
 > - Next node of temp i.e. Last node points to newNode.
+
+*In Plain English:*
+
+> "First, I'll make a new node and put the given data inside it. If the list is empty (no head), I’ll just make this new node the head. But if the list already has nodes, I’ll walk through each one until I find the last node — the one that points to NULL. Once I find it, I’ll tell it to point to the new node. Boom — new node is now the last in line!"
+
 
 </td></tr>
 </table>
