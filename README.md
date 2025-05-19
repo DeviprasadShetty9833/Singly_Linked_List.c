@@ -256,33 +256,33 @@ Position:          1           2            3            4
 List:   head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
 Insert:  [30 | next]→NULL at position 3 i.e before 40.
                                 
-1.
+Step 1:
 
 head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
        ↑          
       temp 
  
-2. After for loop
+Step 2: After for loop
 
 head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
                     ↑
                    temp  
 
-3.
+Step 3:
               newNode → [30 | next]
                                 ↓ 
 head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
                     ↑
                    temp  
 
-4.
+Step 4:
               newNode → [30 | next]
                           ↑      ↓ 
 head→[10 | next]→[20 | next]  [40 | next]→[50 | next]→NULL
                     ↑
                    temp  
 
-5.
+Step 5:
 head→[10 | next]→[20 | next]→[30 | next]→[40 | next]→[50 | next]→NULL
                     ↑            ↑
                    temp       newNode
