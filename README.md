@@ -312,7 +312,15 @@ head→[10 | next]→[20 | next]→[30 | next]→[40 | next]→[50 | next]→NUL
 
 > "First, I'll check if the position makes sense. If it's the first spot I’ll just insert it at the beginning — easy peasy. Otherwise, I’ll walk through the list node by node until I reach the place just before where the new node should go. If I reach the end before finding that spot, I’ll shout ‘out of bounds!’. But if I’m in the right place, I’ll: create the new node, link it to the next node, and adjust the current node to point to this new one. Boom! The new node is now exactly where you asked for."
 
+<br> ![7.](https://img.shields.io/badge/_7]_-Delete_from_Beginning-000080?style=for-the-badge&logo=C&logoColor=white)
 
+<br> ![8.](https://img.shields.io/badge/_8]_-Delete_from_End-000080?style=for-the-badge&logo=C&logoColor=white)   
+
+<br> ![9.](https://img.shields.io/badge/_9]_-Delete_from_Position-000080?style=for-the-badge&logo=C&logoColor=white)   
+
+<br> ![10.](https://img.shields.io/badge/_10]_-Display_Function-000080?style=for-the-badge&logo=C&logoColor=white)   
+
+<br> ![11.](https://img.shields.io/badge/_11]_-Main_Function-000080?style=for-the-badge&logo=C&logoColor=white)   
 
 # Output:
 
