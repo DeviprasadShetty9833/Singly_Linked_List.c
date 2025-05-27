@@ -137,8 +137,6 @@ typedef struct Node {
 
 > "This is a structure (called Node) that contains:  an integer data, and a pointer next that links to the next node in the list. Oh, and thanks to typedef, you don’t have to say ‘struct Node’ every time. You can just call me Node — way simpler!"
 
-<br> ![image alt](https://github.com/DeviprasadShetty9833/Singly_Linked_List.c/blob/542f71872f4e42020d36a731dfb83d9620f2d1cb/assets/SLL1.png)  <!-- Website : Medium -->
-
 </td></tr>
 </table>
 
@@ -198,8 +196,6 @@ HEAD→[Data1 | next1]→[Data2 | next2]→[Data3 | next3]→NULL
 *In Plain English:*
 
 > "I made a new node for you. I saved your number in it. I made sure it doesn't point to any other node yet. Here’s your brand-new node, ready to put it into your list."
-
-<br> ![image alt](https://github.com/DeviprasadShetty9833/Singly_Linked_List.c/blob/aca2fa765667965ca09da800977a87b951831b2b/assets/SLL2.png)  <!-- Website : Stackademic -->
 
 </td></tr>
 </table>
