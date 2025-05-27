@@ -127,7 +127,7 @@ typedef struct Node {
 
 ```html
 [Data(value) | next(address)]→
-|____________________________|
+\___________________________/
               |
              Node
 
