@@ -123,6 +123,16 @@ typedef struct Node {
 > - data is used to store the value contained in the Node.
 > - next is a pointer of type struct Node, which is used to point to the next Node in the linked list, thus creating the chain-like structure.
 
+*Example:*
+
+```html
+[Data(value) | next(address)]→
+|____________________________|
+              |
+             Node
+
+```
+
 *In Plain English:*
 
 > "This is a structure (called Node) that contains:  an integer data, and a pointer next that links to the next node in the list. Oh, and thanks to typedef, you don’t have to say ‘struct Node’ every time. You can just call me Node — way simpler!"
