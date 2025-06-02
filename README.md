@@ -60,7 +60,7 @@
 
 <br> 🟠 Applications:
 
-```html
+```c
 
 • Dynamic memory allocation.
 
@@ -88,7 +88,7 @@
 
 *Code:*
 
-```html
+```c
 #include <stdio.h>   // For input/output functions like printf and scanf
 #include <stdlib.h>  // For malloc and free functions
 
