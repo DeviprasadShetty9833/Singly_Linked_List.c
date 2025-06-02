@@ -38,7 +38,7 @@
 
 <br> 🟠 Basic Operations:
 
-```c
+```html
 
 - Insertion: Add a node at the beginning, end, or a specific position.
 
@@ -50,7 +50,7 @@
 
 <br> 🟠 Advantages:
 
-```c
+```html
 
 • Dynamic size: Can grow or shrink as needed.
 
@@ -60,7 +60,7 @@
 
 <br> 🟠 Applications:
 
-```c
+```html
 
 • Dynamic memory allocation.
 
@@ -125,7 +125,7 @@ typedef struct Node {
 
 *Example:*
 
-```c
+```html
 [Data(value) | next(address)]→
 \___________________________/
               |
@@ -162,7 +162,7 @@ Node* createNode(int data) {
 
 *Algorithm:*
 
-```c
+```html
 
 CreateNode(data):
    1. Allocate memory for new node.
@@ -207,7 +207,7 @@ HEAD→[Data1 | next1]→[Data2 | next2]→[Data3 | next3]→NULL
 
 *Code:*
 
-```html
+```c
 
 void insertAtBeginning(Node **head, int data) {
     Node *newNode = createNode(data);                 // Create node
