@@ -38,7 +38,7 @@
 
 <br> 🟠 Basic Operations:
 
-```html
+```c
 
 - Insertion: Add a node at the beginning, end, or a specific position.
 
@@ -50,7 +50,7 @@
 
 <br> 🟠 Advantages:
 
-```html
+```c
 
 • Dynamic size: Can grow or shrink as needed.
 
