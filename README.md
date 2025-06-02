@@ -278,7 +278,7 @@ Step 3:
 
 *Code:*
 
-```html
+```c
 
 void insertAtEnd(Node **head, int data) {
     Node *newNode = createNode(data);
@@ -372,7 +372,7 @@ head→[10 | next]→[20 | next]→[30 | next]→NULL
 
 *Code:*
 
-```html
+```c
 
 void insertAtPosition(Node **head, int data, int pos) {
     if (pos < 1) { 
