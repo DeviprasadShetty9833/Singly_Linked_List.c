@@ -108,7 +108,7 @@
 
 *Code:*
 
-```html
+```c
 typedef struct Node {
     int data;              // Holds the value
     struct Node *next;     // Pointer to the next node
@@ -125,7 +125,7 @@ typedef struct Node {
 
 *Example:*
 
-```html
+```c
 [Data(value) | next(address)]→
 \___________________________/
               |
@@ -147,7 +147,7 @@ typedef struct Node {
 
 *Code:*
 
-```html
+```c
 
 Node* createNode(int data) {
     Node *newNode = (Node*)malloc(sizeof(Node));  // Allocate memory
@@ -162,7 +162,7 @@ Node* createNode(int data) {
 
 *Algorithm:*
 
-```html
+```c
 
 CreateNode(data):
    1. Allocate memory for new node.
