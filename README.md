@@ -226,8 +226,8 @@ void insertAtBeginning(Node **head, int data) {
 
 InsertAtBeginning(head, data):
     1. newNode = CreateNode(data)
-    2. newNode.next = head
-    3. head = newNode
+    2. Set newNode.next = head
+    3. Set head = newNode
     4. Return head
 
 ```
