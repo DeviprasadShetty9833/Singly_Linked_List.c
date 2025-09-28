@@ -318,7 +318,7 @@ InsertAtEnd(head, data):
 
 *Explanation:*
 
-> - If head points to no node, connect the newnode to head.
+> - if the list is empty, connect the newNode to head.
 > - temp points to initial node, pointed by head. 
 > - Traverse till second last node. 
 > - Next node of temp i.e. Last node points to newNode.
@@ -605,9 +605,9 @@ DeleteFromEnd(head):
 
 * If the list is empty → nothing to delete.
 * If there’s only one node → delete it and set head to `NULL`.
-* Otherwise, traverse the list until you reach the **second-last node**.
-* Print and delete the last node.
-* Make the second-last node’s `next = NULL` (marking it as the end).
+* Otherwise, traverse the list until you reach the second last node.
+* Delete the last node.
+* Make temp’s `next = NULL` (marking it as the end).
 
 *Example:*
 
