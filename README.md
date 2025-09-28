@@ -174,9 +174,9 @@ CreateNode(data):
 
 *Explanation:*
 
-> - createNode is function that returns a pointer to a Node.
-> - newNode is a pointer to a Node.
-> -  malloc calculates the size in bytes needed to store a Node Structure and allocates memory from the heap(dynamic memory) and returns void pointer.
+> - 'createNode' is function that returns a pointer to a Node.
+> - 'newNode' is a pointer to a Node.
+> - 'malloc' calculates the size in bytes needed to store a Node Structure and allocates memory from the heap(dynamic memory) and returns void pointer.
 > - (Node*) before malloc converts (typecasting) the generic void pointer into a Node pointer.
 > - int data is stored in newNode's data and newNode's next pointer points to NULL i.e does not point to anything.
 
