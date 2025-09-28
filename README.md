@@ -234,7 +234,7 @@ InsertAtBeginning(head, data):
 
 *Explanation:*
 
-> - Node **head is a pointer to the head pointer of list. It allows modifying the actual head.
+> - 'Node **head' is a pointer to the head pointer of list. It allows modifying the actual head.
 > - Link newNode to initial node pointed by head. 
 > - Link head pointer to point new node, thus newNode becomes initial node.
 
