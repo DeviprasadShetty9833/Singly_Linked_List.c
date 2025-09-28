@@ -484,10 +484,6 @@ head→[10 | next]→[20 | next]→[30 | next]→[40 | next]→[50 | next]→NUL
 </td></tr>
 </table>
 
-
-<table>
-<tr><td>
-
 <table>
 <tr><td>
 
