@@ -626,8 +626,6 @@ head→[10 | next]→[20 | next]→NULL
 </td></tr>
 </table>
 
----
-
 <table>
 <tr><td>
 
@@ -720,8 +718,6 @@ head→[10 | next]→[20 | next]→[40 | next]→NULL
 </td></tr>
 </table>
 
----
-
 <table>
 <tr><td>
 
@@ -781,8 +777,6 @@ Output: 10 → 20 → 30 → NULL
 
 </td></tr>
 </table>
-
----
 
 <table>
 <tr><td>
@@ -845,24 +839,6 @@ List: 20 → 30 → NULL
 </td></tr>
 </table>
 
-
-<table>
-<tr><td>
-
- ![status](https://img.shields.io/badge/status-upcoming-yellow)
-
-<br> ![7.](https://img.shields.io/badge/_7]_-Delete_from_Beginning-000080?style=for-the-badge&logo=C&logoColor=white)
-
-<br> ![8.](https://img.shields.io/badge/_8]_-Delete_from_End-000080?style=for-the-badge&logo=C&logoColor=white)   
-
-<br> ![9.](https://img.shields.io/badge/_9]_-Delete_from_Position-000080?style=for-the-badge&logo=C&logoColor=white)   
-
-<br> ![10.](https://img.shields.io/badge/_10]_-Display_Function-000080?style=for-the-badge&logo=C&logoColor=white)   
-
-<br> ![11.](https://img.shields.io/badge/_11]_-Main_Function-000080?style=for-the-badge&logo=C&logoColor=white)   
-
-</td></tr>
-</table>
 
 # Output:
 
