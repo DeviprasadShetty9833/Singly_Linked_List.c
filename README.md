@@ -483,6 +483,308 @@ head→[10 | next]→[20 | next]→[30 | next]→[40 | next]→[50 | next]→NUL
 </td></tr>
 </table>
 
+
+<table>
+<tr><td>
+
+<br> ![7.](https://img.shields.io/badge/_7]_-Delete_from_Beginning-000080?style=for-the-badge\&logo=C\&logoColor=white)
+
+*Code:*
+
+```c
+void deleteFromBeginning(Node **head) {
+    if (*head == NULL) {
+        printf("List is empty! Nothing to delete.\n");
+        return;
+    }
+
+    Node *temp = *head;            // Store current head
+    *head = (*head)->next;         // Move head to next node
+    printf("%d deleted from beginning\n", temp->data);
+    free(temp);                    // Free old head
+}
+```
+
+*Algorithm:*
+
+```html
+DeleteFromBeginning(head):
+    1. IF head == NULL:
+          Print "List empty"
+          RETURN
+    2. temp = head
+    3. head = head.next
+    4. Print temp.data
+    5. Free(temp)
+```
+
+*Example:*
+
+```html
+head→[10 | next]→[20 | next]→[30 | next]→NULL
+
+Step 1: temp = head (10)
+Step 2: head = head->next (20)
+Step 3: Free old node (10)
+
+Result:
+head→[20 | next]→[30 | next]→NULL
+```
+
+*In Plain English:*
+
+> "I chop off the very first node. I slide the head pointer to the next node. Then I clean up the old one from memory. Boom — the list just lost its leader."
+
+</td></tr>
+</table>
+
+---
+
+<table>
+<tr><td>
+
+<br> ![8.](https://img.shields.io/badge/_8]_-Delete_from_End-000080?style=for-the-badge\&logo=C\&logoColor=white)
+
+*Code:*
+
+```c
+void deleteFromEnd(Node **head) {
+    if (*head == NULL) {
+        printf("List is empty! Nothing to delete.\n");
+        return;
+    }
+
+    if ((*head)->next == NULL) {      // Only one node
+        printf("%d deleted from end\n", (*head)->data);
+        free(*head);
+        *head = NULL;
+        return;
+    }
+
+    Node *temp = *head;
+    while (temp->next->next != NULL)  // Move to second-last node
+        temp = temp->next;
+
+    printf("%d deleted from end\n", temp->next->data);
+    free(temp->next);                 // Free last node
+    temp->next = NULL;                // Mark new end
+}
+```
+
+*Algorithm:*
+
+```html
+DeleteFromEnd(head):
+    1. IF head == NULL:
+          Print "List empty"
+          RETURN
+    2. IF head.next == NULL:
+          Free head
+          head = NULL
+          RETURN
+    3. temp = head
+    4. WHILE temp.next.next != NULL:
+          temp = temp.next
+    5. Free(temp.next)
+    6. temp.next = NULL
+```
+
+*Example:*
+
+```html
+head→[10 | next]→[20 | next]→[30 | next]→NULL
+
+Step 1: Traverse to 20 (second last)
+Step 2: Free 30
+Step 3: temp->next = NULL
+
+Result:
+head→[10 | next]→[20 | next]→NULL
+```
+
+*In Plain English:*
+
+> "I walk right up to the second-last node, kick out the last one, and slam the door shut (set next = NULL). Now the party ends one node earlier."
+
+</td></tr>
+</table>
+
+---
+
+<table>
+<tr><td>
+
+<br> ![9.](https://img.shields.io/badge/_9]_-Delete_from_Position-000080?style=for-the-badge\&logo=C\&logoColor=white)
+
+*Code:*
+
+```c
+void deleteFromPosition(Node **head, int pos) {
+    if (*head == NULL) {
+        printf("List is empty! Nothing to delete.\n");
+        return;
+    }
+
+    if (pos < 1) {
+        printf("Invalid position!\n");
+        return;
+    }
+
+    if (pos == 1) {
+        deleteFromBeginning(head);
+        return;
+    }
+
+    Node *temp = *head;
+    for (int i = 1; i < pos - 1 && temp != NULL; i++)
+        temp = temp->next;
+
+    if (temp == NULL || temp->next == NULL) {
+        printf("Position out of bounds!\n");
+        return;
+    }
+
+    Node *toDelete = temp->next;
+    temp->next = toDelete->next;
+    printf("%d deleted from position %d\n", toDelete->data, pos);
+    free(toDelete);
+}
+```
+
+*Algorithm:*
+
+```html
+DeleteFromPosition(head, pos):
+    1. IF head == NULL:
+          Print "List empty"
+          RETURN
+    2. IF pos == 1:
+          Call DeleteFromBeginning()
+    3. temp = head
+    4. FOR i from 1 to pos-1:
+          temp = temp.next
+          IF temp == NULL:
+             Print "Out of bounds"
+             RETURN
+    5. toDelete = temp.next
+    6. temp.next = toDelete.next
+    7. Free(toDelete)
+```
+
+*Example:*
+
+```html
+head→[10 | next]→[20 | next]→[30 | next]→[40 | next]→NULL
+Delete position 3 (30)
+
+Step 1: Traverse to node 20
+Step 2: toDelete = 30
+Step 3: Link 20→40
+Step 4: Free 30
+
+Result:
+head→[10 | next]→[20 | next]→[40 | next]→NULL
+```
+
+*In Plain English:*
+
+> "I march to the node right before the unlucky one, cut its link, and point it to the next-next guy. Then I delete the unwanted node. Middleman removed!"
+
+</td></tr>
+</table>
+
+---
+
+<table>
+<tr><td>
+
+<br> ![10.](https://img.shields.io/badge/_10]_-Display_Function-000080?style=for-the-badge\&logo=C\&logoColor=white)
+
+*Code:*
+
+```c
+void display(Node *head) {
+    if (head == NULL) {
+        printf("List is empty.\n");
+        return;
+    }
+
+    Node *temp = head;
+    printf("List: ");
+    while (temp != NULL) {
+        printf("%d → ", temp->data);
+        temp = temp->next;
+    }
+    printf("NULL\n");
+}
+```
+
+*Explanation:*
+
+* Start at head.
+* Print each node’s data followed by an arrow.
+* Stop when `temp` reaches `NULL`.
+
+*In Plain English:*
+
+> "I line up all the nodes and introduce them one by one, pointing to the next, until I reach NULL — the curtain call of the list."
+
+</td></tr>
+</table>
+
+---
+
+<table>
+<tr><td>
+
+<br> ![11.](https://img.shields.io/badge/_11]_-Main_Function-000080?style=for-the-badge\&logo=C\&logoColor=white)
+
+*Code:*
+
+```c
+int main() {
+    Node *head = NULL;   // Start with empty list
+
+    insertAtBeginning(&head, 20);
+    insertAtBeginning(&head, 10);
+    insertAtEnd(&head, 30);
+    insertAtEnd(&head, 40);
+    insertAtPosition(&head, 25, 3);
+
+    display(head);
+
+    deleteFromBeginning(&head);
+    deleteFromEnd(&head);
+    deleteFromPosition(&head, 2);
+
+    display(head);
+
+    return 0;
+}
+```
+
+*Sample Output:*
+
+```html
+20 inserted at the beginning
+10 inserted at the beginning
+30 inserted at the end
+40 inserted at the end
+25 inserted at position 3
+List: 10 → 20 → 25 → 30 → 40 → NULL
+10 deleted from beginning
+40 deleted from end
+25 deleted from position 2
+List: 20 → 30 → NULL
+```
+
+*In Plain English:*
+
+> "Main is the director: it calls the actors (insert, delete, display) onto the stage one by one. The show begins with insertions, continues with deletions, and ends with the final lineup of the list."
+
+</td></tr>
+</table>
+
 <table>
 <tr><td>
 
