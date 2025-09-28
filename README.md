@@ -318,6 +318,7 @@ InsertAtEnd(head, data):
 
 *Explanation:*
 
+> - If head points to no node, connect the newnode to head.
 > - temp points to initial node, pointed by head. 
 > - Traverse till second last node. 
 > - Next node of temp i.e. Last node points to newNode.
@@ -526,7 +527,6 @@ DeleteFromBeginning(head):
 * Check if the list is empty. If so, nothing to delete.
 * Store the first node (`head`) in a temporary pointer.
 * Move the `head` pointer to the second node.
-* Print which node was deleted.
 * Free the memory of the old first node.
 
 *Example:*
