@@ -487,6 +487,9 @@ head→[10 | next]→[20 | next]→[30 | next]→[40 | next]→[50 | next]→NUL
 <table>
 <tr><td>
 
+<table>
+<tr><td>
+
 <br> ![7.](https://img.shields.io/badge/_7]_-Delete_from_Beginning-000080?style=for-the-badge\&logo=C\&logoColor=white)
 
 *Code:*
@@ -518,6 +521,14 @@ DeleteFromBeginning(head):
     5. Free(temp)
 ```
 
+*Explanation:*
+
+* Check if the list is empty. If so, nothing to delete.
+* Store the first node (`head`) in a temporary pointer.
+* Move the `head` pointer to the second node.
+* Print which node was deleted.
+* Free the memory of the old first node.
+
 *Example:*
 
 ```html
@@ -533,7 +544,7 @@ head→[20 | next]→[30 | next]→NULL
 
 *In Plain English:*
 
-> "I chop off the very first node. I slide the head pointer to the next node. Then I clean up the old one from memory. Boom — the list just lost its leader."
+> "I chop off the very first node, slide the head to the next one, and erase the old leader. Now the 2nd node is the new head of the list."
 
 </td></tr>
 </table>
@@ -585,18 +596,28 @@ DeleteFromEnd(head):
     3. temp = head
     4. WHILE temp.next.next != NULL:
           temp = temp.next
-    5. Free(temp.next)
-    6. temp.next = NULL
+    5. Print temp.next.data
+    6. Free(temp.next)
+    7. temp.next = NULL
 ```
+
+*Explanation:*
+
+* If the list is empty → nothing to delete.
+* If there’s only one node → delete it and set head to `NULL`.
+* Otherwise, traverse the list until you reach the **second-last node**.
+* Print and delete the last node.
+* Make the second-last node’s `next = NULL` (marking it as the end).
 
 *Example:*
 
 ```html
 head→[10 | next]→[20 | next]→[30 | next]→NULL
 
-Step 1: Traverse to 20 (second last)
-Step 2: Free 30
-Step 3: temp->next = NULL
+Step 1: temp = node 20 (second last)
+Step 2: toDelete = node 30
+Step 3: Free 30
+Step 4: temp->next = NULL
 
 Result:
 head→[10 | next]→[20 | next]→NULL
@@ -604,7 +625,7 @@ head→[10 | next]→[20 | next]→NULL
 
 *In Plain English:*
 
-> "I walk right up to the second-last node, kick out the last one, and slam the door shut (set next = NULL). Now the party ends one node earlier."
+> "I walk to the second-last node, snip off the last one, and declare: ‘You’re the new end now!’."
 
 </td></tr>
 </table>
@@ -668,18 +689,28 @@ DeleteFromPosition(head, pos):
              RETURN
     5. toDelete = temp.next
     6. temp.next = toDelete.next
-    7. Free(toDelete)
+    7. Print toDelete.data
+    8. Free(toDelete)
 ```
+
+*Explanation:*
+
+* Validate: if the list is empty or position < 1 → reject.
+* If position = 1 → delete from beginning.
+* Otherwise, move to the node before the target position.
+* If position doesn’t exist → out of bounds.
+* Adjust pointers: skip over the node to delete.
+* Free the unwanted node.
 
 *Example:*
 
 ```html
 head→[10 | next]→[20 | next]→[30 | next]→[40 | next]→NULL
-Delete position 3 (30)
+Delete position 3 (node 30)
 
-Step 1: Traverse to node 20
-Step 2: toDelete = 30
-Step 3: Link 20→40
+Step 1: temp = node 20
+Step 2: toDelete = node 30
+Step 3: temp->next = node 40
 Step 4: Free 30
 
 Result:
@@ -688,7 +719,7 @@ head→[10 | next]→[20 | next]→[40 | next]→NULL
 
 *In Plain English:*
 
-> "I march to the node right before the unlucky one, cut its link, and point it to the next-next guy. Then I delete the unwanted node. Middleman removed!"
+> "I sneak up to the node before the target, cut the chain, and skip over the unwanted one. That node gets deleted, and the list continues smoothly."
 
 </td></tr>
 </table>
@@ -719,15 +750,38 @@ void display(Node *head) {
 }
 ```
 
+*Algorithm:*
+
+```html
+Display(head):
+    1. IF head == NULL:
+          Print "List empty"
+          RETURN
+    2. temp = head
+    3. WHILE temp != NULL:
+          Print temp.data
+          temp = temp.next
+    4. Print NULL
+```
+
 *Explanation:*
 
-* Start at head.
-* Print each node’s data followed by an arrow.
-* Stop when `temp` reaches `NULL`.
+* If list is empty → message.
+* Otherwise → start from head.
+* Print each node’s value, followed by an arrow.
+* Stop when you reach `NULL`.
+
+*Example:*
+
+```html
+head→[10 | next]→[20 | next]→[30 | next]→NULL
+
+Output: 10 → 20 → 30 → NULL
+```
 
 *In Plain English:*
 
-> "I line up all the nodes and introduce them one by one, pointing to the next, until I reach NULL — the curtain call of the list."
+> "I call out each node in order, pointing to the next, until the end where I shout NULL — meaning no more nodes!"
 
 </td></tr>
 </table>
@@ -763,6 +817,16 @@ int main() {
 }
 ```
 
+*Explanation:*
+
+* Starts with an empty list.
+* Inserts: 20, 10 at beginning → list grows leftwards.
+* Inserts: 30, 40 at end → list grows rightwards.
+* Inserts: 25 at position 3 → inserted in middle.
+* Displays current list.
+* Deletes first node, last node, and node at position 2.
+* Displays updated list.
+
 *Sample Output:*
 
 ```html
@@ -780,10 +844,11 @@ List: 20 → 30 → NULL
 
 *In Plain English:*
 
-> "Main is the director: it calls the actors (insert, delete, display) onto the stage one by one. The show begins with insertions, continues with deletions, and ends with the final lineup of the list."
+> "The main function is the stage manager: it tells insertions where to go, calls for deletions when someone must leave, and finally asks display to show the lineup of all surviving nodes."
 
 </td></tr>
 </table>
+
 
 <table>
 <tr><td>
