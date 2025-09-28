@@ -530,8 +530,19 @@ DeleteFromBeginning(head):
 ```html
 head→[10 | next]→[20 | next]→[30 | next]→NULL
 
-Step 1: temp = head (10)
-Step 2: head = head->next (20)
+Step 1:
+
+head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
+       ↑          
+      temp
+
+Step 2: 
+
+  ↑→ → → → → → → → → →
+head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
+       ↑          
+      temp 
+
 Step 3: Free old node (10)
 
 Result:
