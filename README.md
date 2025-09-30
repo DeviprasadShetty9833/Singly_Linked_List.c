@@ -538,7 +538,8 @@ head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
 
 Step 2: 
 
-  ↑→ → → → → → → → → →
+   → → → → → → → →
+  ↑                     ↓
 head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
        ↑          
       temp 
