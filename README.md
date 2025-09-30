@@ -532,7 +532,7 @@ head→[10 | next]→[20 | next]→[30 | next]→NULL
 
 Step 1:
 
-head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
+head→[10 | next]→[20 | next]→[30 | next]→NULL
        ↑          
       temp
 
@@ -540,7 +540,7 @@ Step 2:
 
    → → → → → → → →
   ↑                     ↓
-head→[10 | next]→[20 | next]→[40 | next]→[50 | next]→NULL
+head [10 | next]→[20 | next]→[30 | next]→NULL
        ↑          
       temp 
 
