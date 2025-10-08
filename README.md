@@ -101,6 +101,8 @@
 </td></tr>
 </table>
 
+---
+
 <table>
 <tr><td>
 
@@ -139,6 +141,8 @@ typedef struct Node {
 
 </td></tr>
 </table>
+
+---
 
 <table>
 <tr><td>
@@ -199,6 +203,8 @@ HEAD→[Data1 | next1]→[Data2 | next2]→[Data3 | next3]→NULL
 
 </td></tr>
 </table>
+
+---
 
 <table>
 <tr><td>
@@ -270,6 +276,8 @@ Step 3:
 
 </td></tr>
 </table>
+
+---
 
 <table>
 <tr><td>
@@ -365,6 +373,8 @@ head→[10 | next]→[20 | next]→[30 | next]→NULL
 
 </td></tr>
 </table>
+
+---
 
 <table>
 <tr><td>
@@ -483,6 +493,8 @@ head→[10 | next]→[20 | next]→[30 | next]→[40 | next]→[50 | next]→NUL
 
 </td></tr>
 </table>
+
+---
 
 <table>
 <tr><td>
@@ -638,6 +650,8 @@ head→[10 | next]→[20 | next]→NULL
 </td></tr>
 </table>
 
+---
+
 <table>
 <tr><td>
 
@@ -730,6 +744,8 @@ head→[10 | next]→[20 | next]→[40 | next]→NULL
 </td></tr>
 </table>
 
+---
+
 <table>
 <tr><td>
 
@@ -789,6 +805,8 @@ Output: 10 → 20 → 30 → NULL
 
 </td></tr>
 </table>
+
+---
 
 <table>
 <tr><td>
